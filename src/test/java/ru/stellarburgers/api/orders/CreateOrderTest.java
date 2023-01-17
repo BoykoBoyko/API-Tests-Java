@@ -36,8 +36,8 @@ public class CreateOrderTest {
         orderClient = new OrderClient();
         allIngredientsDataList = orderClient.getIngredients();
         ingredients = new ArrayList<>();
-        ingredients.add(allIngredientsDataList.getData().get(0).get_id());
-        ingredients.add(allIngredientsDataList.getData().get(1).get_id());
+        ingredients.add(allIngredientsDataList.getData().get(0).getId());
+        ingredients.add(allIngredientsDataList.getData().get(1).getId());
         defaultOrder = new DefaultOrder(ingredients);
         orderAssertions = new OrderAssertions();
     }
